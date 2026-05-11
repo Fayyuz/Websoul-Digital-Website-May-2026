@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display), sans-serif;
+  --font-mono: var(--font-mono), ui-monospace, SFMono-Regular, monospace;
+
+  /* Websoul Brand Palette - Premium Light Theme */
+  --color-brand-950: #0a0e14;
+  --color-brand-900: #1a2332;
+  --color-brand-800: #2a384e;
+  --color-brand-700: #3a4d6a;
+  --color-brand-600: #4a6286;
+  --color-brand-500: #5a77a2;
+  --color-brand-400: #7a92b5;
+  --color-brand-300: #9badc8;
+  --color-brand-200: #bdc8db;
+  --color-brand-100: #dee3ed;
+  --color-brand-50: #eef1f6;
+
+  /* Neutral palette refinements */
+  --color-neutral-950: #0f1115;
+  --color-neutral-900: #1c1f26;
+  --color-neutral-800: #2d323d;
+  --color-neutral-700: #424957;
+  --color-neutral-600: #5c6475;
+  --color-neutral-500: #7a8394;
+}
+
+@layer base {
+  body {
+    @apply antialiased text-neutral-900 bg-white font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight font-medium;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply w-full max-w-7xl mx-auto px-4 md:px-6 lg:px-8;
+  }
+}
